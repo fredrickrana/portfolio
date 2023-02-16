@@ -1,11 +1,27 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+// import styles from './page.module.css'
+import Header from 'components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <h1>Lets Build an AWESOME portfolio...</h1>
+    <div>
+      {/* Header */}
+      <Header />
+
+      {/* Hero */}
+
+      {/* About */}
+
+      {/* Projects */}
+
+      {/* Skills */}
+
+      {/* Contact Me */}
+
+    </div>
+
   )
 }
