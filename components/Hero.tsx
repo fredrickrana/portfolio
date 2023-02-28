@@ -43,8 +43,8 @@ export default function Hero({}: Props) {
         </div>
       </div>
 
-      <div className="w-full absolute top-[30%] bg-[blue]/10 left-0 h-[400px] -skew-y-12"></div>
-      <div className="w-full absolute top-[20%] bg-[beige]/10 left-0 h-[400px] -skew-y-12"></div>
+      {/* <div className="w-full absolute top-[30%] bg-[blue]/10 left-0 h-[400px] -skew-y-12"></div>
+      <div className="w-full absolute top-[20%] bg-[beige]/10 left-0 h-[400px] -skew-y-12"></div> */}
 
     </div>
   );
