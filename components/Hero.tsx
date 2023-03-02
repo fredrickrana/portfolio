@@ -7,7 +7,7 @@ import BackgroundCircles from "./BackgroundCircles";
 type Props = {}
 
 export default function Hero({}: Props) {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "Hi, my name is Fredrick Rana",
       "<ILoveToCode />",
@@ -22,7 +22,7 @@ export default function Hero({}: Props) {
       <BackgroundCircles />
       <img className="relative rounded-full h-32 w-32 mx-auto object-cover" src="https://w0.peakpx.com/wallpaper/146/771/HD-wallpaper-aladdin-disney-movie-cartoon.jpg" alt="alladin" />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">Software Engineer</h2>
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">Software Developer</h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
           <span>{text}</span>
           <Cursor cursorColor="#fff" />
