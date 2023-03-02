@@ -10,32 +10,64 @@ import Contact from 'components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
+// export default function Home() {
+//   return (
+//     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#4181ee]/80'>
+//       <Header />
+
+//       {/* Hero */}
+//       <div>
+//         <section id="hero" className='snap-start'>
+//           <Hero />
+//         </section>
+//       </div>
+
+//       {/* About */}
+//       <section id='about' className='snap-center'>
+//         <About />
+//       </section>
+
+//       {/* Projects */}
+//       <section id='projects' className='snap-center'>
+//         <Projects />
+//       </section>
+
+//       {/* Skills */}
+//       <section id='skills' className='snap-start'>
+//         <Skills />
+//       </section>
+
+//       {/* Contact Me */}
+//       <section id='contact' className='snap-start'>
+//         <Contact />
+//       </section>
+
+//     </div>
+
+//   )
+// }
+
 export default function Home() {
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#4181ee]/80'>
+    <div className='bg-[rgb(36,36,36)] text-white overflow-x-hidden'>
       <Header />
 
-      {/* Hero */}
       <section id="hero" className='snap-start'>
         <Hero />
       </section>
 
-      {/* About */}
       <section id='about' className='snap-center'>
         <About />
       </section>
 
-      {/* Projects */}
       <section id='projects' className='snap-center'>
         <Projects />
       </section>
 
-      {/* Skills */}
       <section id='skills' className='snap-start'>
         <Skills />
       </section>
 
-      {/* Contact Me */}
       <section id='contact' className='snap-start'>
         <Contact />
       </section>

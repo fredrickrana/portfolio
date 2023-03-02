@@ -3,81 +3,13 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import DarkModeToggle from "react-dark-mode-toggle";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 
 type Props = {}
 
-// export default function Header({}: Props) {
-//   return (
-//     <div className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
-//       <motion.div
-//       initial={{
-//         x: -500,
-//         opacity: 0,
-//         scale: 0.5
-//       }}
-//       animate={{
-//         x: 0,
-//         opacity: 1,
-//         scale: 1
-//       }}
-//       transition={{
-//         duration: 1.5
-//       }}
-//       className="flex flex-row items-center"
-//       >
-//         <img src="" alt="" />
-//         <SocialIcon
-//           url="https://www.linkedin.com/fredrickrana"
-//           fgColor="gray"
-//           bgColor="transparent"
-//         />
-//         <SocialIcon
-//           url="https://github.com/fredrickrana"
-//           fgColor="gray"
-//           bgColor="transparent"
-//         />
-//         <SocialIcon
-//           className="cursor-pointer"
-//           network="email"
-//           fgColor="gray"
-//           bgColor="transparent"
-//         />
-//         <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Get In Touch</p>
-//         <DarkModeToggle
-//           checked={true}
-//           size={60}
-//           className=""
-//         />
-//       </motion.div>
-
-//       <motion.div
-//         initial={{
-//           x: 500,
-//           opacity: 0,
-//           scale: 0.5
-//         }}
-//         animate={{
-//           x: 0,
-//           opacity: 1,
-//           scale: 1
-//         }}
-//         transition={{
-//           duration: 1.5
-//         }}
-//       >
-//         <a href="#home">Home</a>
-//         <a href="#about">About</a>
-//         <a href="#skills">Skills</a>
-//         <a href="#project">Project</a>
-//         <a href="#contact">Contact</a>
-//       </motion.div>
-//     </div>
-//   )
-// }
-
-export default function Header({ }: Props) {
+export default function Header({}: Props) {
   return (
-    <div className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <div className="container m-auto sticky top-0 p-5 pb-12 flex justify-between max-w-7xl mx-auto z-20 items-center">
 
       <motion.div
         initial={{
@@ -93,7 +25,7 @@ export default function Header({ }: Props) {
       >
         <span>
           <img src="/FRLogo-NoBG.png" alt="FRlogo"
-            className="absolute saturate-0 w-36 -top-4 left-0"
+            className="absolute saturate-0 hover:saturate-100 w-36 -top-4 left-0"
           />
         </span>
       </motion.div>
@@ -121,15 +53,17 @@ export default function Header({ }: Props) {
           target="_blank"
           fgColor="gray"
           bgColor="transparent"
+          className="hover:bg-[#085a7d] rounded-full"
         />
         <SocialIcon
           url="https://github.com/fredrickrana"
           target="_blank"
           fgColor="gray"
           bgColor="transparent"
+          className="hover:bg-[#085a7d] rounded-full"
         />
         <SocialIcon
-          className="cursor-pointer"
+          className="cursor-pointer hover:bg-[#085a7d] rounded-full"
           network="email"
           fgColor="gray"
           bgColor="transparent"
@@ -153,13 +87,10 @@ export default function Header({ }: Props) {
       >
         <DarkModeToggle
           checked={true}
-          size={90}
-          className="saturate-0 hover:saturate-100 ml-5"
+          size={80}
+          className="saturate-0 hover:saturate-100 mx-5 mt-3"
         />
       </motion.div>
-
-
-
 
       <motion.div
         initial={{
@@ -175,15 +106,17 @@ export default function Header({ }: Props) {
         transition={{
           duration: 1.5
         }}
+        className='text-center'
       >
-        <a className='px-8 uppercase hidden md:inline-flex text-m text-gray-400' href="#home">Home</a>
-        <a className='px-8 uppercase hidden md:inline-flex text-m text-gray-400' href="#about">About</a>
-        <a className='px-8 uppercase hidden md:inline-flex text-m text-gray-400' href="#skills">Skills</a>
-        <a className='px-8 uppercase hidden md:inline-flex text-m text-gray-400' href="#project">Project</a>
-        <a className='px-8 uppercase hidden md:inline-flex text-m text-gray-400' href="#contact">Contact</a>
-        <button className="border border-[#efefef]/70 rounded-3xl px-0 py-1 saturate-0 bg-[#555555] ">
-          <a className='px-8 uppercase hidden md:inline-flex text-m text-[#efefef]/70' href="/Resume.pdf" download>Resume</a>
+        <a className='px-8 uppercase hidden xl:inline-flex text-m text-gray-400 headerButton' href="#home">Home</a>
+        <a className='px-8 uppercase hidden xl:inline-flex text-m text-gray-400 headerButton' href="#about">About</a>
+        <a className='px-8 uppercase hidden xl:inline-flex text-m text-gray-400 headerButton' href="#skills">Skills</a>
+        <a className='px-8 uppercase hidden xl:inline-flex text-m text-gray-400 headerButton' href="#project">Projects</a>
+        <a className='px-8 uppercase hidden xl:inline-flex text-m text-gray-400 headerButton' href="#contact">Contact</a>
+        <button className="border border-[#efefef]/70 hidden xl:inline-flex md:mt-3 rounded-3xl px-0 py-1 bg-[#555555] hover:bg-[#085a7d]/80">
+          <a className='px-8 uppercase text-m text-[#efefef]/70' href="/Resume.pdf" download>Resume</a>
         </button>
+        <Bars3Icon className="inline-flex xl:hidden text-gray-400 h-10 w-10 right-0 hover:text-[#085a7d]"/>
       </motion.div>
     </div>
   )
