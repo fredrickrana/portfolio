@@ -7,12 +7,33 @@
     @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border-[#f7ab0a]/40 hover:text-[#f7ab0a]/40
   } */
   .headerButton {
-    @apply hover:text-[#f7ab0a]/60
+    @apply hover:text-[#62f8d5]
   }
 
-  .contactInput {
+  /* .contactInput {
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40 hover:border-[#f7ab0a]/40
-  }
+  } */
+}
+
+.modal-overlay {
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  display: block;
+  width: 70%;
+  height: 70%;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .links::after {
