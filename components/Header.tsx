@@ -114,7 +114,7 @@ export default function Header({}: Props) {
         <a className='px-8 uppercase hidden xl:inline-flex text-m text-gray-400 headerButton' href="#project">Projects</a>
         <a className='px-8 uppercase hidden xl:inline-flex text-m text-gray-400 headerButton' href="#contact">Contact</a>
         <button className="border border-[#efefef]/70 hidden xl:inline-flex md:mt-3 rounded-3xl px-0 py-1 bg-[#555555] hover:bg-[#085a7d]/80">
-          <a className='px-8 uppercase text-m text-[#efefef]/70' href="/Resume.pdf" download>Resume</a>
+          <a className='px-8 uppercase text-m text-[#efefef]/70 links' href="/Resume.pdf" download>Resume</a>
         </button>
         <Bars3Icon className="inline-flex xl:hidden text-gray-400 h-10 w-10 right-0 hover:text-[#085a7d]"/>
       </motion.div>

@@ -47,9 +47,13 @@ const inter = Inter({ subsets: ['latin'] })
 //   )
 // }
 
-export default function Home() {
+type Props = {}
+
+export default function Home({}: Props) {
+  let toggle = true;
+  const light = toggle ? 'bg-[rgb(36,36,36)]' : 'white'
   return (
-    <div className='bg-[rgb(36,36,36)] text-white overflow-x-hidden'>
+    <div className={`${light} text-white overflow-x-hidden`}>
       <Header />
 
       <section id="hero" className='snap-start'>
@@ -73,6 +77,5 @@ export default function Home() {
       </section>
 
     </div>
-
   )
 }

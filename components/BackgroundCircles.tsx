@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { easeIn, easeInOut, motion } from "framer-motion";
+import { delay, easeIn, easeInOut, motion } from "framer-motion";
 
 type Props = {}
 
@@ -31,25 +31,35 @@ type Props = {}
 
 export default function BackgroundCircles({ }: Props) {
   return (
-    // <motion.div
-    //   animate={{
-    //     y: [-10, 10, -10]
-    //   }}
-    //   transition={{
-    //     duration: 4,
-    //     repeat: Infinity,
-    //     repeatDelay: 0
-    //   }}
-    //   className='flex'
-    // >
-    <div>
-      <div className="absolute border border-gray-500 rounded-full h-[400px] w-[400px] -top-[145px] left-[40px] bg-slate-800/10 animate-pulse"></div>
-      <div className="absolute border border-gray-500 rounded-full h-[100px] w-[100px] top-[28%] left-[40%] bg-slate-800/10 animate-pulse"></div>
-      <div className="absolute border border-gray-500 rounded-full h-[350px] w-[350px] -bottom-[40px] right-[10px] bg-slate-800/10 animate-pulse"></div>
-      <div className="hidden lg:inline-flex absolute border border-gray-500 rounded-full h-[300px] w-[300px] top-[2%] right-[2%] bg-slate-800/10 animate-pulse"></div>
-      <div className="absolute border border-gray-500 rounded-full h-[200px] w-[200px] ml-[79%] mt-[30%] bg-slate-800/10 animate-pulse"></div>
-      <div className="hidden lg:inline-flex absolute border border-gray-500 rounded-full h-[650px] w-[650px] left-30 mt-[42%] bg-slate-800/10 animate-pulse"></div>
+    <motion.div
+      initial={{
+        y: -5
+      }}
+      animate={{
+        y: [-5, 5, -5],
+        opacity: 1
+      }}
+      transition={{
+        duration: 5,
+        repeat: Infinity,
+        repeatDelay: 0
+      }}
+    >
+    <div className="h-screen w-full relative">
+      {/* <div className="absolute border-2 border-gray-500 rounded-full h-[400px] w-[400px] -top-[145px] left-[40px] bg-slate-800/10 animate-pulse"></div>
+      <div className="absolute border-2 border-gray-500 rounded-full h-[100px] w-[100px] top-[28%] left-[40%] bg-slate-800/10 animate-pulse"></div>
+      <div className="absolute border-2 border-gray-500 rounded-full h-[350px] w-[350px] -bottom-[40px] right-[10px] bg-slate-800/10 animate-pulse"></div>
+      <div className="hidden lg:inline-flex absolute border-2 border-gray-500 rounded-full h-[300px] w-[300px] top-[2%] right-[2%] bg-slate-800/10 animate-pulse"></div> */}
+      {/* <div className="absolute border border-gray-500 rounded-full h-[200px] w-[200px] ml-[79%] mt-[30%] bg-slate-800/10 animate-pulse"></div> */}
+      {/* <div className="hidden lg:inline-flex absolute border-2 border-gray-500 rounded-full h-[650px] w-[650px] left-30 mt-[42%] bg-slate-800/10 animate-pulse"></div> */}
+
+      <div className="absolute border-2 border-gray-500 rounded-full h-[400px] w-[400px] top-[40%] bg-slate-800/10 animate-pulse"></div>
+      <div className="absolute border-2 border-gray-500 rounded-full h-[100px] w-[100px] mt-[48%] left-[40%] bg-slate-800/10 animate-pulse"></div>
+        <div className="absolute border-2 border-gray-500 rounded-full h-[100px] w-[100px] bottom-[10%] left-[40%] bg-slate-800/10 animate-pulse"></div>
+      <div className="absolute border-2 border-gray-500 rounded-full h-[350px] w-[350px] -bottom-[40px] right-[10px] bg-slate-800/10 animate-pulse"></div>
+      <div className="hidden lg:inline-flex absolute border-2 border-gray-500 rounded-full h-[300px] w-[300px] top-[2%] right-[2%] bg-slate-800/10 animate-pulse"></div>
+      <div className="hidden lg:inline-flex absolute border-2 border-gray-500 rounded-full h-[650px] w-[650px] left-30 mt-[42%] bg-slate-800/10 animate-pulse"></div>
     </div>
-    // </motion.div>
+    </motion.div>
   )
 }

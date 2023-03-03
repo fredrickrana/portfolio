@@ -62,24 +62,35 @@ export default function Hero({ }: Props) {
     loop: 1,
     delaySpeed: 1000
   });
+  const [occupations] = useTypewriter({
+    words: [
+      " problem solver",
+      " creator",
+      " lifelong learner"
+    ],
+    loop: Infinity,
+    delaySpeed: 2000,
+    deleteSpeed: 100
+  })
 
   return (
     <div className="container h-screen flex w-full justify-center m-auto">
       <BackgroundCircles />
       <div className="mt-[12%] ml-[5%] text-center w-2/4">
         <h3 className="md:text-lg px-10 pt-8 text-left font-mono tracking-[.05em] text-[#62f8d5]">Hi, my name is</h3>
-        <h1 className="text-5xl lg:text-5xl font-semibold px-10 pt-4 text-left text-[#ccd6f6] drop-shadow-xl font-sfmono tracking-[.10em]">Fredrick Rana.</h1>
+        <h1 className="text-6xl lg:text-5xl font-semibold px-10 pt-4 text-left text-[#ccd6f6] drop-shadow-xl font-sfmono tracking-[.10em]">Fredrick Rana.</h1>
+        <h1 className="text-3xl lg:text-5xl font-semibold pl-10 pt-6 text-left text-[#8892B0]">I am a <span className="links lg:text-5xl drop-shadow-xl font-sfmono text-[#63f8d5] tracking-[.03em]">Software Developer.</span></h1>
 
-        <h1 className="text-5xl lg:text-3xl font-semibold">I am a <span className="lg:text-5xl pl-3 text-blue-800 drop-shadow-xl font-sfmono">Software Developer.</span></h1>
+        <h1 className="text-md font-semibold pl-10 pt-8 text-left text-[#8892B0]">Other occupations include...<span className="lg:text-md drop-shadow-xl font-sfmono text-[#63f8d5]">{occupations}<Cursor cursorColor="#62f8d5" /></span></h1>
 
-        <h1 className="text-5xl lg:text-5xl font-semibold mt-12 p-12 border rounded-3xl bg-[#1d2d41] drop-shadow-xl">Welcome To My Portfolio!</h1>
+        {/* <h1 className="text-5xl lg:text-5xl font-semibold mt-12 p-12 border rounded-3xl bg-[#1d2d41] drop-shadow-xl">Welcome To My Portfolio!</h1> */}
       </div>
 
 
-      <div className="mt-[5%] mr-44 text-center w-2/4">
-        <img className="rounded-lg w-11/12 mx-auto saturate-0 hover:saturate-100" src="/CartoonSelfPhotoNoBG.png" alt="photo" />
+      {/* <div className="mt-[5%] mr-44 text-center w-2/4">
+        <img className="rounded-2xl w-11/12 mx-auto saturate-0 hover:saturate-100" src="/CartoonSelfPhotoNoBG.png" alt="photo" />
         <h1 className="text-5xl lg:text-5xl font-semibold px-10 ml-12 pt-12">{love}<span className="text-blue-500">{text}<Cursor cursorColor="#4174cf" /></span></h1>
-      </div>
+      </div> */}
     </div>
 
     // row
