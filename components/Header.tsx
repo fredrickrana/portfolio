@@ -3,7 +3,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 // import DarkModeToggle from "react-dark-mode-toggle";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Modal from "./Modal";
 import useModal from "./useModal";
 
@@ -115,12 +115,10 @@ export default function Header({}: Props) {
         <button className="border border-[#efefef]/70 hidden xl:inline-flex md:mt-3 rounded-3xl px-0 py-1 bg-[#555555] hover:bg-[#62f8d5]/60">
           <a className='px-8 uppercase text-m text-[#efefef]/70 hover:text-[#fff]' href="/Resume.pdf" download>Resume</a>
         </button>
-        <Bars3Icon className="inline-flex xl:hidden text-gray-400 h-10 w-10 right-0 headerButton" onClick={toggle}/>
+        <Bars3Icon className="inline-flex xl:hidden text-gray-400 h-10 w-10 mr-[20px] headerButton cursor-pointer" onClick={toggle}/>
         <Modal isOpen={isOpen} toggle={toggle}>
+          <XMarkIcon className="absolute top-[2%] text-gray-400 h-10 w-10 right-[8%] headerButton cursor-pointer" onClick={toggle} />
           <div>
-            <div>
-
-            </div>
             <div>
               <a className='px-8 uppercase text-m text-gray-400 headerButton' href="#home" onClick={toggle}>Home</a>
             </div>

@@ -55,7 +55,7 @@ export default function BackgroundCircles({ }: Props) {
 
       <div className="absolute border-2 border-gray-500 rounded-full h-[400px] w-[400px] top-[40%] bg-slate-800/10 animate-pulse"></div>
       <div className="absolute border-2 border-gray-500 rounded-full h-[100px] w-[100px] mt-[48%] left-[40%] bg-slate-800/10 animate-pulse"></div>
-        <div className="absolute border-2 border-gray-500 rounded-full h-[100px] w-[100px] bottom-[10%] left-[40%] bg-slate-800/10 animate-pulse"></div>
+      <div className="absolute border-2 border-gray-500 rounded-full h-[100px] w-[100px] bottom-[10%] left-[40%] bg-slate-800/10 animate-pulse"></div>
       <div className="absolute border-2 border-gray-500 rounded-full h-[350px] w-[350px] -bottom-[40px] right-[10px] bg-slate-800/10 animate-pulse"></div>
       <div className="hidden lg:inline-flex absolute border-2 border-gray-500 rounded-full h-[300px] w-[300px] top-[2%] right-[2%] bg-slate-800/10 animate-pulse"></div>
       <div className="hidden lg:inline-flex absolute border-2 border-gray-500 rounded-full h-[650px] w-[650px] left-30 mt-[42%] bg-slate-800/10 animate-pulse"></div>

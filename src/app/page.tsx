@@ -53,10 +53,10 @@ export default function Home({}: Props) {
   let toggle = true;
   const light = toggle ? 'bg-[rgb(36,36,36)]' : 'white'
   return (
-    <div className={`${light} text-white overflow-x-hidden`}>
+    <div className={`${light} text-white overflow-x-hidden h-screen scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#62f8d5]`}>
       <Header />
 
-      <section id="hero" className='snap-start'>
+      <section id="home" className='snap-start'>
         <Hero />
       </section>
 
