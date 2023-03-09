@@ -53,22 +53,22 @@ export default function Home({}: Props) {
   let toggle = true;
   const light = toggle ? 'bg-[rgb(36,36,36)]' : 'white'
   return (
-    <div className={`${light} text-white overflow-x-hidden h-screen scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#62f8d5]`}>
+    <div className={`${light} text-white overflow-x-hidden h-screen scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#62f8d5]`}>
       <Header />
 
       <section id="home">
         <Hero />
       </section>
 
-      <section id='about' className='mb-[115%] md:mb-[40%] lg:mb-[10%]'>
+      <section id='about' className='mb-[115%] md:mb-[40%] lg:mb-[10%] hidden'>
         <About />
       </section>
 
-      <section id='projects'>
+      <section id='projects' className='hidden'>
         <Projects />
       </section>
 
-      <section id='skills'>
+      <section id='skills' className='hidden'>
         <Skills />
       </section>
 
