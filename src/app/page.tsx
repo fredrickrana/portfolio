@@ -56,23 +56,23 @@ export default function Home({}: Props) {
     <div className={`${light} text-white overflow-x-hidden h-screen scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#62f8d5]`}>
       <Header />
 
-      <section id="home" className='snap-start'>
+      <section id="home">
         <Hero />
       </section>
 
-      <section id='about' className='snap-center'>
+      <section id='about' className='mb-[115%] md:mb-[40%] lg:mb-[10%]'>
         <About />
       </section>
 
-      <section id='projects' className='snap-center'>
+      <section id='projects'>
         <Projects />
       </section>
 
-      <section id='skills' className='snap-start'>
+      <section id='skills'>
         <Skills />
       </section>
 
-      <section id='contact' className='snap-start'>
+      <section id='contact'>
         <Contact />
       </section>
 

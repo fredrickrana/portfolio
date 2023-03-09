@@ -3,47 +3,51 @@ import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
 
-type Props = {}
-
-export default function Skills({ }: Props) {
+export default function Skills() {
   return (
-    <motion.div
-      initial={{
-        opacity: 0
-      }}
-      whileInView={{
-        opacity: 1
-      }}
-      transition={{
-        duration: 1.5
-      }}
-      className="h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
-    >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">Skills</h3>
-
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">Hover over a skill for current proficiency</h3>
-
-      <div className="grid grid-cols-4 gap-5">
-        <Skill language={`React.js`} imageSource={`https://cdn.cdnlogo.com/logos/r/85/react.svg`} directionLeft={true}/>
-        <Skill language={`Next.js`} imageSource={`https://liveblocks.io/_next/image?url=%2Ficons%2Fmarketing%2Ftechnologies%2Fnextjs.png&w=256&q=75`} directionLeft={true}/>
-        <Skill language={`TypeScript`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png`} directionLeft={true}/>
-        <Skill language={`JavaScript`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png`} directionLeft={true}/>
-        <Skill language={`HTML`} imageSource={`https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png`} directionLeft={true}/>
-        <Skill language={`CSS`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png`} directionLeft={true}/>
-        <Skill language={`Bootstrap`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png`} directionLeft={true}/>
-        <Skill language={`Tailwind`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png`} directionLeft={true}/>
+    <div className="container h-screen m-auto text-center text-[#e5e1e1]">
+      <div className="flex w-full justify-center">
+        <h3 className="uppercase tracking-[20px] text-gray-500 text-3xl lg:text-4xl mt-[20%] lg:mt-[10%] mb-[50px]">Skills</h3>
       </div>
+      <div className="w-[95%] flex flex-wrap justify-center">
 
-      <div className="grid grid-cols-4 gap-5">
-        <Skill language={`React.js`} imageSource={`https://cdn.cdnlogo.com/logos/r/85/react.svg`} directionLeft={false} />
-        <Skill language={`Next.js`} imageSource={`https://liveblocks.io/_next/image?url=%2Ficons%2Fmarketing%2Ftechnologies%2Fnextjs.png&w=256&q=75`} directionLeft={false} />
-        <Skill language={`TypeScript`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png`} directionLeft={false} />
-        <Skill language={`JavaScript`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png`} directionLeft={false} />
-        <Skill language={`HTML`} imageSource={`https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png`} directionLeft={false} />
-        <Skill language={`CSS`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png`} directionLeft={false} />
-        <Skill language={`Bootstrap`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png`} directionLeft={false} />
-        <Skill language={`Tailwind`} imageSource={`https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png`} directionLeft={false} />
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`React.js`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg`} directionLeft={true} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`Next.js`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg`} directionLeft={true} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`TypeScript`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg`} directionLeft={true} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`JavaScript`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`} directionLeft={true} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`HTML`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg`} directionLeft={false} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`CSS`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg`} directionLeft={false} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`Bootstrap`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg`} directionLeft={false} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`Tailwind`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg`} directionLeft={false} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`Node.js`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg`} directionLeft={true} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`Express.js`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg`} directionLeft={true} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`PostgreSQL`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg`} directionLeft={true} />
+        </div>
+        <div className="w-[45%] lg:w-[25%]">
+          <Skill language={`Figma`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg`} directionLeft={true} />
+        </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
