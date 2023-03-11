@@ -55,19 +55,34 @@ export default function Projects({ }: Props) {
       <h3 className="uppercase tracking-[20px] text-gray-500 text-sm lg:text-lg mb-[50px]">Click to view live application</h3>
       <div className="w-[100%] flex flex-wrap justify-center m-auto">
         <div className="w-[45%] lg:w-[25%] mr-[90px]">
-          <img src="/MicMacHomePageScreenshot.png" alt="MicMacHomePageScreenshot" className="shadow-lg shadow-blue-500/90 scale-[1.5] mt-12 rounded-md opacity-90 hover:opacity-100 cursor-pointer"/>
+          <a href="https://fredrickrana.github.io/ajax-project/" target={"_blank"}>
+            <img src="/MicMacHomePageScreenshot.png" alt="MicMacHomePageScreenshot" className="shadow-lg shadow-blue-500/90 scale-[1.5] mt-12 rounded-md opacity-90 hover:opacity-100 cursor-pointer"/>
+          </a>
           <h1 className="text-2xl mt-24 font-bold pt-2">MicMac</h1>
           <div>
             <button className="border rounded-full p-3 text-sm mt-5 align-middle"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" className="w-[30px] inline bg-white rounded-full" />   View Code</button>
           </div>
         </div>
         <div className="w-[45%] lg:w-[25%] ml-[90px]">
-          <img src="/CodingFuze.png" alt="CodingFuzeScreenshot" className="shadow-lg shadow-[#62f8d5]/90 scale-[1.5] mt-12 rounded-md opacity-90 hover:opacity-100 cursor-pointer" />
+          <a href="https://codingfuze.fredrickrana.com/" target={"_blank"}>
+            <img src="/CodingFuze.png" alt="CodingFuzeScreenshot" className="shadow-lg shadow-[#62f8d5]/90 scale-[1.5] mt-12 rounded-md opacity-90 hover:opacity-100 cursor-pointer" />
+          </a>
           <h1 className="text-2xl mt-24 font-bold pt-2">CodingFuze</h1>
           <div>
             <button className="border rounded-full p-3 text-sm mt-5 align-middle"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" className="w-[30px] inline bg-white rounded-full" />   View Code</button>
           </div>
         </div>
+
+        <div className="w-[45%] lg:w-[25%] ml-[90px]">
+          <a href="https://codingfuze.fredrickrana.com/" target={"_blank"}>
+            <img src="/CodeJournalScreenshot.png" alt="CodingFuzeScreenshot" className="shadow-lg shadow-[#62f8d5]/90 scale-[1] mt-12 rounded-md opacity-90 hover:opacity-100 cursor-pointer" />
+          </a>
+          <h1 className="text-2xl mt-24 font-bold pt-2">Code Journal</h1>
+          <div>
+            <button className="border rounded-full p-3 text-sm mt-5 align-middle"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" className="w-[30px] inline bg-white rounded-full" />   View Code</button>
+          </div>
+        </div>
+
       </div>
     </div>
   )

@@ -60,15 +60,15 @@ export default function Home({}: Props) {
         <Hero />
       </section>
 
-      <section id='about' className='mb-[115%] md:mb-[40%] lg:mb-[10%] hidden'>
+      <section id='about' className='mb-[115%] md:mb-[40%] lg:mb-[10%]'>
         <About />
       </section>
 
-      <section id='projects' className='hidden'>
+      <section id='projects'>
         <Projects />
       </section>
 
-      <section id='skills' className='hidden'>
+      <section id='skills'>
         <Skills />
       </section>
 
