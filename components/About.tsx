@@ -37,7 +37,7 @@ export default function About() {
               opacity: 1
             }}
             src="/UCI-Photo.jpg"
-            className="mb-6 lg:mb-0 flex-shrink-0 w-72 h-72 rounded-full object-cover lg:rounded-lg lg:w-80 lg:h-80 xl:w-96 xl:h-96 m-auto border"
+            className="mb-6 lg:mb-0 flex-shrink-0 w-72 h-72 rounded-full object-cover lg:rounded-lg lg:w-80 lg:h-80 m-auto border"
           />
           <h1 className="lg:mt-8 text-[#ccd6f6]"><MegaphoneIcon className="w-4 inline align-middle" /> Fun Facts:</h1>
           <h1 className="lg:mt-2">{love}<span className="text-[#62f8d5]/70">To-Workout</span> {closingTag}</h1>

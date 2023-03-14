@@ -72,6 +72,9 @@ export default function Projects({ }: Props) {
             <button className="border rounded-full p-3 text-sm mt-5 align-middle"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" className="w-[30px] inline bg-white rounded-full" />   View Code</button>
           </div>
         </div>
+        <div>
+          <h3>Other (smaller) projects</h3>
+        </div>
 
         <div className="w-[45%] lg:w-[25%] ml-[90px]">
           <a href="https://codingfuze.fredrickrana.com/" target={"_blank"}>
