@@ -60,7 +60,7 @@ export default function Home({}: Props) {
         <Hero />
       </section>
 
-      <section id='about' className='mb-[115%] md:mb-[40%] lg:mb-[10%]'>
+      <section id='about' className='mb-[115%] md:mb-[40%] lg:mb-[10%] hidden'>
         <About />
       </section>
 
@@ -68,11 +68,11 @@ export default function Home({}: Props) {
         <Projects />
       </section>
 
-      <section id='skills'>
+      <section id='skills' className='hidden'>
         <Skills />
       </section>
 
-      <section id='contact'>
+      <section id='contact' className='hidden'>
         <Contact />
       </section>
 
