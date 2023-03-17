@@ -1,6 +1,5 @@
 'use client'
 import React from "react";
-import { motion } from "framer-motion";
 
 type Props = {
   title: string;
@@ -20,7 +19,7 @@ export default function Project({ title, imageSource, shadowColor, codeSource, b
         <a href={codeSource} target={"_blank"} className="block"><button className={`border rounded-full p-3 text-sm align-middle ${buttonColor}`}><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" className="w-[30px] inline bg-white rounded-full" />   View Code</button></a>
       </div>
       <div className="w-[100%]">
-        <p className="text-sm">{description}</p>
+        <p className="text-sm mx-5">{description}</p>
       </div>
     </div>
   )

@@ -2,14 +2,11 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-// import DarkModeToggle from "react-dark-mode-toggle";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Modal from "./Modal";
 import useModal from "./useModal";
 
-type Props = {}
-
-export default function Header({}: Props) {
+export default function Header() {
   const { isOpen, toggle } = useModal();
   return (
     <div className="container m-auto sticky top-0 p-5 pb-12 flex justify-between max-w-7xl mx-auto z-20 items-center">
@@ -71,26 +68,6 @@ export default function Header({}: Props) {
           }
         />
       </motion.div>
-
-      {/* <motion.div
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{
-          duration: 4,
-          easing: "ease-in"
-        }}
-      > */}
-        {/* <DarkModeToggle
-          checked={true}
-          size={80}
-          className="saturate-0 hover:saturate-100 mx-5 mt-3"
-        />
-      </motion.div> */}
-
       <motion.div
         initial={{
           x: 500,
@@ -118,7 +95,6 @@ export default function Header({}: Props) {
         <Bars3Icon className="inline-flex xl:hidden text-gray-400 h-10 w-10 mr-[20px] headerButton cursor-pointer" onClick={toggle}/>
         <Modal isOpen={isOpen} toggle={toggle}>
           <XMarkIcon className="absolute top-[3%] text-gray-400 h-10 w-10 right-[8%] headerButton cursor-pointer" onClick={toggle} />
-
           <motion.div
             initial={{
               y: 1000,
@@ -145,17 +121,14 @@ export default function Header({}: Props) {
             <div>
               <a className='px-8 uppercase text-m text-gray-400 headerButton text-3xl' href="#projects" onClick={toggle}>Projects</a>
             </div>
-
             <div>
               <a className='px-8 uppercase text-m text-gray-400 headerButton text-3xl' href="#contact" onClick={toggle}>Contact</a>
             </div>
-
             <div>
               <button className="border border-[#efefef]/70 xl:inline-flex md:mt-3 rounded-3xl px-0 py-1 bg-[#555555] hover:bg-[#62f8d5]/60" onClick={toggle}>
                 <a className='px-8 uppercase text-m text-[#efefef]/70 hover:text-[#fff] text-3xl' href="/Resume.pdf" download>Resume</a>
               </button>
             </div>
-
           </motion.div>
         </Modal>
       </motion.div>
