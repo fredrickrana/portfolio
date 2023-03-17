@@ -26,7 +26,7 @@ export default function Projects() {
         }}
         className="w-[85%] flex flex-wrap justify-center m-auto pb-10 border border-gray-500 rounded-lg hover:border-[#62f8d5]/70 space-y-4 shadow-lg shadow-[#62f8d5]/90"
       >
-        <Project title={`CodingFuze`} imageSource={`/CodingFuzeProject.png`} shadowColor={`shadow-[#62f8d5]/90`} codeSource={`https://github.com/fredrickrana/final-project`} buttonColor={`hover:bg-[#62f8d5]/20`} description={`A full stack web application for front-end developers/students who want to build,test, and showcare their projects.`} />
+        <Project title={`CodingFuze`} projectLink={`https://codingfuze.fredrickrana.com/`} imageSource={`/CodingFuzeProject.png`} shadowColor={`shadow-[#62f8d5]/90`} codeSource={`https://github.com/fredrickrana/final-project`} buttonColor={`hover:bg-[#62f8d5]/20`} description={`A full stack web application for front-end developers/students who want to build,test, and showcare their projects.`} />
         <Technologies technology="React" />
         <Technologies technology="JavaScript" />
         <Technologies technology="Node" />
@@ -50,7 +50,7 @@ export default function Projects() {
         }}
         className="w-[85%] flex flex-wrap justify-center m-auto pb-10 border border-gray-500 rounded-lg hover:border-blue-500/90 space-y-4 shadow-lg shadow-blue-500/90"
       >
-        <Project title={`MicMac`} imageSource={`/MicMacProject.png`} shadowColor={`shadow-blue-500/90`} codeSource={`https://github.com/fredrickrana/ajax-project`} buttonColor={`hover:bg-blue-500/40`} description={`A web application for gym goers, health enthusiasts, or patients who want to track their daily food intake and view the macronutrients / micronutrients of their meals.`} />
+        <Project title={`MicMac`} projectLink={`https://fredrickrana.github.io/ajax-project/`} imageSource={`/MicMacProject.png`} shadowColor={`shadow-blue-500/90`} codeSource={`https://github.com/fredrickrana/ajax-project`} buttonColor={`hover:bg-blue-500/40`} description={`A web application for gym goers, health enthusiasts, or patients who want to track their daily food intake and view the macronutrients / micronutrients of their meals.`} />
         <Technologies technology="HTML" />
         <Technologies technology="CSS" />
         <Technologies technology="JavaScript" />
