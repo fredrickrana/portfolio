@@ -13,19 +13,19 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id='about' className='mb-[215%] md:mb-[40%] lg:mb-[10%]'>
+      <section id='about' className='mb-[215%] md:mb-[40%] lg:mb-[12%]'>
         <About />
       </section>
 
-      <section id='skills' className='mb-[215%] md:mb-[40%] lg:mb-[10%]'>
+      <section id='skills' className='mb-[215%] md:mb-[40%] lg:mb-[12%]'>
         <Skills />
       </section>
 
-      <section id='projects' className='mb-[315%] md:mb-[40%] lg:mb-[10%]'>
+      <section id='projects' className='mb-[315%] md:mb-[40%] lg:mb-[12%]'>
         <Projects />
       </section>
 
-      <section id='contact' className='mt-[225%] mb-[150%] md:mb-[40%] md:mt-[130%] lg:mb-[10%]'>
+      <section id='contact' className='mt-[225%] mb-[150%] md:mb-[40%] md:mt-[130%] lg:mb-[12%]'>
         <Contact />
       </section>
 
