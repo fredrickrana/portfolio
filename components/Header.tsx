@@ -24,7 +24,7 @@ export default function Header() {
       >
         <span>
           <img src="/FRLogo.png" alt="FRlogo"
-            className="absolute saturate-0 hover:saturate-100 w-36 -top-4 left-0"
+            className="absolute saturate-0 hover:saturate-100 w-20 top-2 md:w-36 md:-top-4 left-0"
           />
         </span>
       </motion.div>
@@ -42,7 +42,7 @@ export default function Header() {
         transition={{
           duration: 1.5
         }}
-        className="flex flex-row items-center ml-[10%] mt-2"
+        className="flex flex-row items-center ml-[10%] mt-2 w-32 md:w-48"
       >
         <SocialIcon
           url="https://linkedin.com/in/fredrick-rana"
@@ -90,9 +90,9 @@ export default function Header() {
         <a className='px-8 uppercase hidden xl:inline-flex text-m text-gray-400 headerButton' href="#projects">Projects</a>
         <a className='px-8 uppercase hidden xl:inline-flex text-m text-gray-400 headerButton' href="#contact">Contact</a>
         <button className="border border-[#efefef]/70 hidden xl:inline-flex md:mt-3 rounded-3xl px-0 py-1 bg-[#555555] hover:bg-[#62f8d5]/60">
-          <a className='px-8 uppercase text-m text-[#efefef]/70 hover:text-[#fff]' href="/Resume.pdf" download>Resume</a>
+          <a className='px-8 uppercase text-m text-[#efefef]/70 hover:text-[#fff]' href="/FredrickRana.Resume.pdf" download>Resume</a>
         </button>
-        <Bars3Icon className="inline-flex xl:hidden text-gray-400 h-10 w-10 mr-[20px] headerButton cursor-pointer" onClick={toggle}/>
+        <Bars3Icon className="inline-flex xl:hidden text-gray-400 h-10 w-8 md:w-10 mr-[20px] headerButton cursor-pointer" onClick={toggle}/>
         <Modal isOpen={isOpen} toggle={toggle}>
           <XMarkIcon className="absolute top-[3%] text-gray-400 h-10 w-10 right-[8%] headerButton cursor-pointer" onClick={toggle} />
           <motion.div
@@ -110,23 +110,23 @@ export default function Header() {
             className="space-y-12"
           >
             <div>
-              <a className='px-8 uppercase text-m text-gray-400 headerButton text-3xl' href="#home" onClick={toggle}>Home</a>
+              <a className='px-8 text-m text-gray-400 headerButton text-3xl' href="#home" onClick={toggle}>Home</a>
             </div>
             <div>
-              <a className='px-8 uppercase text-m text-gray-400 headerButton text-3xl' href="#about" onClick={toggle}>About</a>
+              <a className='px-8 text-m text-gray-400 headerButton text-3xl' href="#about" onClick={toggle}>About</a>
             </div>
             <div>
-              <a className='px-8 uppercase text-m text-gray-400 headerButton text-3xl' href="#skills" onClick={toggle}>Skills</a>
+              <a className='px-8 text-m text-gray-400 headerButton text-3xl' href="#skills" onClick={toggle}>Skills</a>
             </div>
             <div>
-              <a className='px-8 uppercase text-m text-gray-400 headerButton text-3xl' href="#projects" onClick={toggle}>Projects</a>
+              <a className='px-8 text-m text-gray-400 headerButton text-3xl' href="#projects" onClick={toggle}>Projects</a>
             </div>
             <div>
-              <a className='px-8 uppercase text-m text-gray-400 headerButton text-3xl' href="#contact" onClick={toggle}>Contact</a>
+              <a className='px-8 text-m text-gray-400 headerButton text-3xl' href="#contact" onClick={toggle}>Contact</a>
             </div>
             <div>
               <button className="border border-[#efefef]/70 xl:inline-flex md:mt-3 rounded-3xl px-0 py-1 bg-[#555555] hover:bg-[#62f8d5]/60" onClick={toggle}>
-                <a className='px-8 uppercase text-m text-[#efefef]/70 hover:text-[#fff] text-3xl' href="/Resume.pdf" download>Resume</a>
+                <a className='px-8 text-m text-[#efefef]/70 hover:text-[#fff] text-3xl' href="/FredrickRana.Resume.pdf" download>Resume</a>
               </button>
             </div>
           </motion.div>

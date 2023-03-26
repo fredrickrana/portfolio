@@ -8,7 +8,7 @@ export default function Skills() {
       <div className="flex w-full justify-center">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-3xl lg:text-4xl mt-[20%] lg:mt-[10%] mb-[50px]">Skills</h3>
       </div>
-      <div className="w-[95%] flex flex-wrap justify-center">
+      <div className="w-[100%] flex flex-wrap justify-center">
         <div className="w-[45%] lg:w-[25%]">
           <Skill language={`React.js`} imageSource={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg`} directionLeft={true} />
         </div>

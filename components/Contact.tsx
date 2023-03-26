@@ -22,17 +22,17 @@ export default function Contact() {
         <h3 className="uppercase tracking-[20px] text-gray-500 text-3xl lg:text-4xl mt-[20%] lg:mt-[10%] mb-[50px]">Contact</h3>
       </div>
       <div className="flex w-[90%] m-auto">
-        <h3 className="text-xl font-semibold text-center">
+        <h3 className="text-base md:text-xl font-semibold text-center">
           I'm currently looking for any new opportunities related to Software Development, so please feel free to send me a message. My inbox is always open and I'll try my best to get back to you!
         </h3>
       </div>
-      <div className="flex w-[90%] m-auto text-2xl items-center justify-center mt-10 space-x-5">
+      <div className="flex w-[80%] m-auto text-lg md:text-2xl items-center justify-center mt-10 space-x-5">
         <EnvelopeIcon className="text-[#62f8d5]/70 h-7 w-7 animate-pulse" />
         <p className="hover:text-[#62f8d5]/70 cursor-pointer" onClick={
           () => { window.location.href = 'mailto:fredrickrana@gmail.com'; }
         }>fredrickrana@gmail.com</p>
       </div>
-      <div className="flex w-[90%] m-auto text-md  sm:text-xl items-center justify-center mt-10">
+      <div className="flex w-[100%] m-auto text-sm md:text-lg items-center justify-center mt-10">
         <motion.form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto"
           initial={{
             opacity: 0,
@@ -50,7 +50,7 @@ export default function Contact() {
           </div>
           <input {...register('subject')} className="contactInput" type="text" placeholder="Subject" />
           <textarea {...register('message')} className="contactInput resize-none scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#62f8d5]" cols={30} rows={10} placeholder="Message"></textarea>
-          <button className="bg-[#62f8d5]/40 py-5 px-10 rounded-md font-bold text-lg hover:bg-[#62f8d5]/60" type="submit">
+          <button className="bg-[#62f8d5]/40 py-3 px-2 md:py-5 md:px-10 rounded-md font-bold text-sm md:text-lg hover:bg-[#62f8d5]/60" type="submit">
             Submit
           </button>
         </motion.form>

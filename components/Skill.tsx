@@ -12,7 +12,7 @@ export default function Skill({ directionLeft, language, imageSource }: Props) {
   return (
     <motion.div
       initial={{
-        x: directionLeft ? -200 : 200,
+        x: directionLeft ? -100 : 100,
         opacity: 0
       }}
       transition={{
@@ -24,8 +24,8 @@ export default function Skill({ directionLeft, language, imageSource }: Props) {
       }}
       className="border border-gray-500 p-6 justify-center mb-5 mx-3 hover:border-[#62f8d5]/70"
     >
-      <img src={imageSource} className="object-cover w-[100px] h-[100px] m-auto hover:scale-110"/>
-      <p className="text-2xl font-bold text-white pt-5 hover:text-[#62f8d5]">{language}</p>
+      <img src={imageSource} className="object-cover w-[100px] md:h-[100px] m-auto hover:scale-110"/>
+      <p className="text-sm md:text-2xl font-bold text-white pt-5 hover:text-[#62f8d5]">{language}</p>
     </motion.div>
   )
 }
