@@ -26,9 +26,9 @@ export default function Hero() {
     deleteSpeed: 100
   })
   return (
-    <div className="container h-screen flex w-full justify-center m-auto">
+    <div className="container flex w-full justify-center m-auto">
       <BackgroundCircles />
-      <div className="mt-[12%] text-center w-2/4">
+      <div className="mt-[8%] md:mt-[12%] text-center w-2/4">
         <motion.h3
           initial={{
             opacity: 0
@@ -71,7 +71,7 @@ export default function Hero() {
           transition={{
             duration: 2.5
           }}
-          className="text-2xl md:text-4x; lg:text-5xl font-semibold pt-6 text-center md:text-left text-[#8892B0]"
+          className="text-3xl md:text-4x; lg:text-5xl font-semibold pt-6 text-center md:text-left text-[#8892B0]"
         >
           I am a <span className="links lg:text-5xl drop-shadow-xl font-sfmono text-[#63f8d5] tracking-[.03em]">Software Developer.</span>
         </motion.h1>

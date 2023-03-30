@@ -17,7 +17,7 @@ export default function Contact() {
     window.location.href = `mailto:fredrickrana@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
   };
   return (
-    <div className="container h-screen m-auto text-center text-[#e5e1e1]">
+    <div className="container m-auto text-center text-[#e5e1e1e0]">
       <div className="flex w-full justify-center">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-3xl lg:text-4xl mt-[20%] lg:mt-[10%] mb-[50px]">Contact</h3>
       </div>

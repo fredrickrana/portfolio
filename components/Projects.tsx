@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <div className="container h-screen m-auto text-center text-[#e5e1e1] space-y-10">
+    <div className="container m-auto text-center text-[#e5e1e1e0] space-y-10">
       <div className="flex w-full justify-center">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-3xl lg:text-4xl mt-[20%] lg:mt-[10%] mb-[20px]">Projects</h3>
       </div>

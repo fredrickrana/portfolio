@@ -7,7 +7,7 @@ export default function About() {
   const love = '<I-Love-';
   const closingTag = '/>';
   return (
-    <div className="container h-screen m-auto text-center text-[#e5e1e1]">
+    <div className="container m-auto text-center text-[#e5e1e1e0] font-extralight">
       <div className="flex w-full justify-center">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-3xl lg:text-4xl mt-[20%] lg:mt-[10%] mb-[50px]">About</h3>
       </div>
@@ -63,7 +63,7 @@ export default function About() {
           <p className="text-sm md:text-base">I love the creativity that comes with programming, the ability to solve complex problems, and the fact that there is always something new to learn. Today, as a software developer, I am driven by my passion for creating solutions that make a difference. I am constantly refining my skills, experimenting/learning new programming languages and techniques, and I enjoy collaborating with others to bring new ideas to life.</p>
           <p className="mt-5 text-[#ccd6f6]"><BookOpenIcon className="w-4 inline align-middle" /> Story:</p>
           <p className="text-sm md:text-base">I have a background in healthcare and have always been interested in health and wellness. After graduating from the <span className="text-[#62f8d5]">University of California, Irvine</span> in 2020, I started working within healthcare as a physical therapist aide and had an initial goal of becoming a physical therapist. Through my friends who were software developers, I discovered a new world of problem-solving, creativity, and innovation. I was drawn to it as a creative outlet and continued to explore my interest in software development in my free time. I found programming to be a highly creative and intellectually stimulating field with the potential for using technology to improve people's lives and solve complex problems. Ultimately, my decision to switch careers was driven by my desire to pursue a path that aligned with my interests, passions, and strengths. I subsequently enrolled in <span className="text-[#62f8d5]">LearningFuze</span>, an accelerated, in-person full-stack web development program in Irvine, California where I acquired comprehensive skills in HTML, CSS, JavaScript, Node.js, Express.js, PostgreSQL, React, data structures and algorithms. I believe that software development is an exciting and rapidly evolving field, and I am eager to contribute my skills and creativity to make a positive impact on the world.</p>
-          <p className="my-5 text-sm md:text-base">Thank you for taking the time to get to know me a little better. If you have any questions or would like to connect, feel free to <a className="text-[#62f8d5]" href="#contact">contact me</a>.</p>
+          <p className="my-5 text-sm md:text-base">Thank you for taking the time to get to know me a little better. If you have any questions or would like to connect, feel free to <a className="text-[#62f8d5] hover:underline underline-offset-4" href="#contact">contact me</a>.</p>
         </motion.div>
       </div>
     </div>

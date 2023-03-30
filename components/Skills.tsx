@@ -4,7 +4,7 @@ import Skill from "./Skill";
 
 export default function Skills() {
   return (
-    <div className="container h-screen m-auto text-center text-[#e5e1e1]">
+    <div className="container m-auto text-center text-[#e5e1e1e0]">
       <div className="flex w-full justify-center">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-3xl lg:text-4xl mt-[20%] lg:mt-[10%] mb-[50px]">Skills</h3>
       </div>
